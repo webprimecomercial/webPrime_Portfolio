@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* principal */
+.background-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 10;
+}
+
+
+.logo img {
+    height: 100px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Menu de navegação */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    padding-bottom: 5px;
+    border: #000000;
+    border-color: #000000;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fdfdfd;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+/* Botão de contato */
+.contact-button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #00c2d9;
+    color: white;
+    border-color: #00c2d9;
+}
+
+/* Estilo dos SVGs */
+.svg-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.svg-one {
+    height: 100vh;
+    margin-top: -25px; 
+    width: 600px; 
+    height: auto;
+    margin-right: 20px; 
+    transform: translateX(20px); 
+    position: relative; 
+    z-index: 2; 
+}
+
+.svg-two {
+    width: 100%; 
+    height: auto;
+    opacity: 0.6;
+    margin-top: -1070px; 
+    margin-right: 50px;
+    position: relative; 
+    z-index: 1; 
+    display: block; 
+    clear: both; 
+}
+
+.svg-one, .svg-two {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.hero {
+    margin-top: 50px;
+    padding: 100px;
+    text-align: left; 
+    position: relative; 
+    z-index: 10; 
+    background: rgba(255, 255, 255, 0); 
+}
+
+.hero-content {
+    max-width: 600px; 
+}
+
+.hero-title {
+    font-family: 'ABeeZee', sans-serif;
+    color: #008AAA; 
+    font-size: 25px;
+    font-style: italic; 
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 35px;
+    font-style: italic; 
+    color: #000000; 
+    margin-bottom: 10px;
+}
+
+.description {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 19px;
+    font-style: italic; 
+    color: rgb(82, 81, 81); 
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #008AAA; 
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'ABeeZee', sans-serif; 
+    font-style: italic; 
+}
+
+.cta-btn:hover {
+    background-color: #00c2d9; 
+}
+
+/*sobre nós*/
+.sobre-nos {
+    background-color: #0A657A; 
+    padding: 50px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: relative; 
+}
+
+.sobre-nos-title {
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif; 
+    font-style: italic; 
+}
+
+.sobre-nos-container {
+    background-color: #F2F0F4; 
+    border-radius: 15px; 
+    padding: 30px; 
+    max-width: 600px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    font-family: 'ABeeZee', sans-serif; 
+    font-style: italic; 
+    z-index: 10; 
+    margin-right: -150px; 
+    position: relative; 
+    bottom: 50px; 
+    transition: transform 0.3s ease; 
+    border: 2px solid #008AAA; 
+    border-left: 5px solid #008AAA; 
+}
+
+.sobre-nos-container:hover {
+    transform: translateY(-5px); 
+}
+
+.contato-info {
+    position: absolute; 
+    bottom: 90px; 
+    left: 35%; 
+    transform: translateX(-50%); 
+    font-family: 'ABeeZee', sans-serif; 
+    font-size: 14px; 
+    font-style: italic; 
+    max-width: 400px; 
+    color: #333; 
+    z-index: 15; 
+    background-color: #F2F0F4; 
+    padding: 10px; 
+    border-radius: 10px; 
+    border: 1px solid #008AAA; 
+}
+
+.highlight {
+    color: #008AAA; 
+}
+
+.imagem-container {
+    position: relative; 
+    z-index: 1; 
+}
+
+.imagem-container img {
+    width: 900px; 
+    height: auto; 
+}
