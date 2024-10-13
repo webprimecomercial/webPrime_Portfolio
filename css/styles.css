@@ -258,3 +258,69 @@ body {
     width: 900px; 
     height: auto; 
 }
+
+/*projetos*/
+.projetos{
+    background-color: #fff;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+}
+
+.projetos-title{
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.projetos h2{
+    margin-bottom: 20px;
+    color: #0A657A;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filtros .filtro {
+    background-color: #fff;
+    border: 2px solid #008AAA;
+    color: #008AAA;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.filtros .filtro:hover,
+.filtros .filtro.ativo {
+    background-color: #008AAA;
+    color: #fff;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio{
+    width: 300px;
+    background-color: #33333396;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio img{
+    width: 100%;
+    border-radius: 10px;
+}
