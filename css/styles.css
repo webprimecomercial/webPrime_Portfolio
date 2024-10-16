@@ -402,7 +402,7 @@ section.equipe{
     z-index: 3;
 }
 
-
+    
 .profile-card {
     background-color: #ffffff;
     width: 200px;
@@ -449,3 +449,78 @@ section.equipe{
     color: #0A657A;
 }
 
+/* Contato */
+
+.contato{
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    background-color: #00596a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-title{
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+    color: #000;
+    margin: 20px;
+    z-index: 3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+label {
+    color: white;
+    margin-bottom: 15px;
+    text-align: left;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 150px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+}
+  
+button {
+    padding: 15px;
+    border: none;
+    background-color: #007c91;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+button:hover {
+    background-color: #009bb0;
+}
+  
+
+
+  
